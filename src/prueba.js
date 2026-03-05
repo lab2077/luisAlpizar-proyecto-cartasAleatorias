@@ -1,17 +1,9 @@
-/*import "bootstrap";
-import "./style.css";
-
-
-import "./assets/img/rigo-baby.jpg";
-import "./assets/img/4geeks.ico";*/
-
-//window.onload = function() {
 let simbolos = ["♦", "♥", "♠", "♣"];
 let valores = ["A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"];
 
 let simboloRandom = Math.floor(Math.random() * simbolos.length);
 let valorRandom = Math.floor(Math.random() * valores.length);
 
-console.log(simbolos[simboloRandom] );
-console.log( valores[valorRandom]);
-//};
+let carta = valores[valorRandom] + simbolos[simboloRandom];
+
+console.log("Carta generada:", carta);
